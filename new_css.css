@@ -1,0 +1,238 @@
+body {
+    background-color: #282c34;
+    color: #e8e6e3;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para a seção "Sobre Mim" */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #353941;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o conteúdo principal da seção "Sobre Mim" (imagem e texto) */
+.about-content {
+    display: flex;
+    max-width: 960px;
+    width: 100%;
+    gap: 40px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Estilos para a imagem de perfil */
+/* Estilos para a imagem de perfil */
+.about-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #61afef;
+    max-width: 100%; /* Garante responsividade da imagem */
+}
+
+/* Estilos para os botões de contato (LinkedIn, GitHub, Resume) */
+.about-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+}
+
+/* Estilos para as informações de texto sobre o usuário */
+.about-info {
+    flex: 1; /* Ocupa o espaço restante */
+}
+
+.about-info h2 {
+    color: #61afef;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os detalhes de contato */
+.contact-details {
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.label {
+    font-weight: bold;
+    width: 80px;
+    margin-right: 50px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #61afef;
+    color: #282c34;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-right: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b1f32d;
+}
+
+/* Estilos para o menu de projetos */
+.project-menu .btn.active {
+    background-color: #b1f32d;
+}
+
+/* Estilos para a seção de projetos */
+.projects {
+    padding: 40px;
+    background-color: #353941;
+}
+
+.projects h2 {
+    text-align: center;
+    color: #61afef;
+    margin-bottom: 30px;
+}
+
+.project-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+/* Estilos para os detalhes dos projetos (cards) */
+.project-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsivo com grid */
+    grid-gap: 30px;
+}
+
+.project-card {
+    border: 1px solid #4b4f56;
+    padding: 30px;
+    background-color: #2f333b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* FOTOS PROJETOS INICIO */
+
+.project-img {
+    max-width: 100%; /* Garante responsividade da imagem */
+    height: auto; /* Ajusta a altura proporcionalmente */
+    object-fit: cover;
+    transition: filter 0.3s ease; /* Transição suave para o filtro */
+}
+
+.project-img:hover {
+    filter: brightness(0.7); /* Escurece a imagem no hover */
+    cursor: pointer;
+}
+
+.project-img[title] {
+    position: relative;
+}
+
+.project-img[title]::before {
+    content: attr(title);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto mais opaco */
+    color: white;
+    padding: 8px 15px; /* Aumenta o padding para melhor legibilidade */
+    border-radius: 8px; /* Arredonda mais as bordas */
+    font-size: 16px; /* Aumenta a fonte para melhor nitidez */
+    font-weight: bold; /* Texto em negrito para destacar */
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra no texto para realçar */
+}
+
+.project-img:hover[title]::before {
+    opacity: 1;
+}
+
+/* FOTOS PROJETOS FIM */
+.project-card h3 {
+    color: #61afef;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    line-height: 1.6;
+}
+
+.project-controls {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para o iframe de exibição do projeto */
+.iframe-container {
+    border: solid; /* Keep the style */
+    border-color: transparent; /* Make the border transparent */
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .project-menu {
+        flex-direction: column;
+    }
+
+    .project-details {
+        grid-template-columns: 1fr; /* Cards em uma coluna em telas menores */
+    }
+
+    .iframe-container {
+        height: 400px;
+    }
+
+    .project-card {
+        padding: 30px;
+        width: 100%; /* Garante que o card ocupe toda a largura */
+    }
+}

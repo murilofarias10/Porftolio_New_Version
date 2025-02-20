@@ -1,0 +1,11 @@
+Exploratory Data Analysis with Python
+This project, submitted to DIO, analyzes two years of sales data for Company X using Python. It provides insights through various charts, including pie, bar, line, box plot, and histogram. Key findings include the top-selling product, annual and monthly profits, best-selling brands, and shipping time statistics. The full code and dataset are available on GitHub.
+
+https://github.com/murilofarias10/R_SQL_OUTROS/blob/main/AnaliseExploratoriaPython/AnaliseExploratoriaDIO.ipynb
+
+pandas – for data manipulation and analysis
+numpy – for numerical operations
+matplotlib – for creating static, animated, and interactive visualizations
+seaborn – for statistical data visualization
+plotly (optional) – for interactive visualizations
+scipy – for statistical analysis (e.g., detecting outliers)

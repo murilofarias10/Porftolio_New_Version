@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murilo's Data Engineering Portfolio</title>
+    <link rel="stylesheet" href="new_css.css">
+</head>
+
+<body>
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="/Projects/profile-pic.jpg" alt="Murilo's Photo">
+                <p></p>
+                <div class="about-buttons">
+                    <a href="https://linkedin.com/in/murilofarias10" class="btn" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/murilofarias10" class="btn" target="_blank">GitHub</a>
+                    <a href="https://drive.google.com/file/d/1CGakXaQLJll29TdJB-li4LvAKQ5HY_XE/view" class="btn" target="_blank">Resume</a>
+                </div>
+            </div>
+            <div class="about-info">
+                <h2>About Me</h2>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="label">Name: </span>Murilo Farias
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">Profession: </span>Data Engineer
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">Email: </span>murilofarias10@gmail.com
+                    </div>
+                    <div class="contact-item">
+                        <span class="label">Phone: </span>+1 (604) 332-9714
+                    </div>
+                </div>
+                <p>Hello, I am Murilo from Brazil, living in Vancouver, Canada. I am a Data Engineer with over 5 years of experience in data analysis, transitioning into data engineering with a passion for AI.</p>
+                <p>With experience in large-scale projects for multinationals, I analyze datasets to support business decision-making using tools such as SQL, Excel, Python, and Power BI.</p>
+                <p><strong>Skills:</strong> Power BI, SQL, Python, VBA, ETL, Data Science, Machine Learning</p> 
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-menu">
+            
+            <button class="btn active" onclick="showProject(1)">Exploratory Data Analysist</button>
+            <button class="btn" onclick="showProject(2)">Machine Learning Project</button>
+            <button class="btn" onclick="showProject(3)">Data Warehouse Design</button>
+            <button class="btn" onclick="showProject(4)">ETL Process Automation</button>
+            <button class="btn" onclick="showProject(5)">SQL Optimization Project</button>
+            <button class="btn" onclick="showProject(6)">Python Automation Project</button>
+            <button class="btn" onclick="showProject(7)">Data Visualization with Power BI</button>
+            <button class="btn" onclick="showProject(8)">Data Science Model</button>
+            <button class="btn" onclick="showProject(9)">Cloud Data Integration</button>
+            <button class="btn" onclick="showProject(10)">Business Intelligence Solution</button>
+        </div>
+
+
+        <div class="project-details">
+            <div id="project-card-1" class="project-card">
+                <h3></h3>
+                <p></p>
+                <img src="" alt="Project Image" class="project-img" title="Texto que aparece no hover">
+                <p></p>
+                <div class="project-controls">
+                    <button class="btn" onclick="previousProject()">Previous</button>
+                    <button class="btn" onclick="nextProject()">Next</button>
+                </div>
+                <p></p>
+                <button class="btn view-details-btn">View Details</button>
+                <div class="iframe-container">
+                    <iframe src="" style="display:none;" width="800" height="600"></iframe>
+
+                </div>
+            </div>
+            <div id="project-card-2" class="project-card" style="display: none;">
+                <h3></h3>
+                <p></p>
+                <img src="" alt="Project Image" class="project-img">
+                <p></p>
+                <div class="project-controls">
+                    <button class="btn" onclick="previousProject()">Previous</button>
+                    <button class="btn" onclick="nextProject()">Next</button>
+                </div>
+                <p></p>
+                <button class="btn view-details-btn">View Details</button>
+                <div class="iframe-container">
+                    <iframe src="" style="display:none;" width="800" height="600"></iframe>
+                </div>
+            </div>
+            <div id="project-card-3" class="project-card" style="display: none;">
+                <h3></h3>
+                <p></p>
+                <img src="" alt="Project Image" class="project-img">
+                <p></p>
+                <div class="project-controls">
+                    <button class="btn" onclick="previousProject()">Previous</button>
+                    <button class="btn" onclick="nextProject()">Next</button>
+                </div>
+                <p></p>
+                <button class="btn view-details-btn">View Details</button>
+                <div class="iframe-container">
+                    <iframe src="" style="display:none;" width="800" height="600"></iframe>
+                </div>
+            </div>
+            <div id="project-card-4" class="project-card" style="display: none;">
+                <h3></h3>
+                <p></p>
+                <img src="" alt="Project Image" class="project-img">
+                <p></p>
+                <div class="project-controls">
+                    <button class="btn" onclick="previousProject()">Previous</button>
+                    <button class="btn" onclick="nextProject()">Next</button>
+                </div>
+                <p></p>
+                <button class="btn view-details-btn">View Details</button>
+                <div class="iframe-container">
+                    <iframe src="" style="display:none;" width="800" height="600"></iframe>
+                </div>
+            </div>
+            <div id="project-card-5" class="project-card" style="display: none;">
+                <h3></h3>
+                <p></p>
+                <img src="" alt="Project Image" class="project-img">
+                <p></p>
+                <div class="project-controls">
+                    <button class="btn" onclick="previousProject()">Previous</button>
+                    <button class="btn" onclick="nextProject()">Next</button>
+                </div>
+                <p></p>
+                <button class="btn view-details-btn">View Details</button>
+                <div class="iframe-container">
+                    <iframe src="" style="display:none;" width="800" height="600"></iframe>
+                </div>
+            </div>
+            <div id="project-card-6" class="project-card" style="display: none;">
+                <h3></h3>
+                <p></p>
+                <img src="" alt="Project Image" class="project-img">
+                <p></p>
+                <div class="project-controls">
+                    <button class="btn" onclick="previousProject()">Previous</button>
+                    <button class="btn" onclick="nextProject()">Next</button>
+                </div>
+                <p></p>
+                <button class="btn view-details-btn">View Details</button>
+                <div class="iframe-container">
+                    <iframe src="" style="display:none;" width="800" height="600"></iframe>
+                </div>
+            </div>
+            <div id="project-card-7" class="project-card" style="display: none;">
+                <h3></h3>
+                <p></p>
+                <img src="" alt="Project Image" class="project-img">
+                <p></p>
+                <div class="project-controls">
+                    <button class="btn" onclick="previousProject()">Previous</button>
+                    <button class="btn" onclick="nextProject()">Next</button>
+                </div>
+                <p></p>
+                <button class="btn view-details-btn">View Details</button>
+                <div class="iframe-container">
+                    <iframe src="" style="display:none;" width="800" height="600"></iframe>
+                </div>
+            </div>
+            <div id="project-card-8" class="project-card" style="display: none;">
+                <h3></h3>
+                <p></p>
+                <img src="" alt="Project Image" class="project-img">
+                <p></p>
+                <div class="project-controls">
+                    <button class="btn" onclick="previousProject()">Previous</button>
+                    <button class="btn" onclick="nextProject()">Next</button>
+                </div>
+                <p></p>
+                <button class="btn view-details-btn">View Details</button>
+                <div class="iframe-container">
+                    <iframe src="" style="display:none;" width="800" height="600"></iframe>
+                </div>
+            </div>
+            <div id="project-card-9" class="project-card" style="display: none;">
+                <h3></h3>
+                <p></p>
+                <img src="" alt="Project Image" class="project-img">
+                <p></p>
+                <div class="project-controls">
+                    <button class="btn" onclick="previousProject()">Previous</button>
+                    <button class="btn" onclick="nextProject()">Next</button>
+                </div>
+                <p></p>
+                <button class="btn view-details-btn">View Details</button>
+                <div class="iframe-container">
+                    <iframe src="" style="display:none;" width="800" height="600"></iframe>
+                </div>
+            </div>
+            <div id="project-card-10" class="project-card" style="display: none;">
+                <h3></h3>
+                <p></p>
+                <img src="" alt="Project Image" class="project-img">
+                <p></p>
+                <div class="project-controls">
+                    <button class="btn" onclick="previousProject()">Previous</button>
+                    <button class="btn" onclick="nextProject()">Next</button>
+                </div>
+                <p></p>
+                <button class="btn view-details-btn">View Details</button>
+                <div class="iframe-container">
+                    <iframe src="" style="display:none;" width="800" height="600"></iframe>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

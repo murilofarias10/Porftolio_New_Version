@@ -1,0 +1,13 @@
+STONE DATA CHALLENGE 2022 - Murilo Farias
+
+This project focuses on data analysis and predictive modeling for the STONE Data Challenge 2022. The dataset was cleaned, analyzed, and visualized to extract key insights. Statistical methods were applied to detect trends and outliers, and machine learning models were implemented to predict future behaviors.
+
+SQL Database: MySQL (SGBD) for data storage and querying.
+Python Libraries:
+pandas – for data manipulation and analysis
+numpy – for numerical operations
+matplotlib – for creating static visualizations
+seaborn – for statistical data visualization
+scikit-learn – for machine learning and predictive modeling
+
+https://github.com/murilofarias10/STONE_DATA_CHALLENGE_2022-MURILO-FARIAS/tree/main

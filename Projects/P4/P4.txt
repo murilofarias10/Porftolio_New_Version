@@ -1,0 +1,21 @@
+<iframe title="XHospital_Murilo_Farias" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYjI5OWM1MmMtZDlkMS00MzMwLWFjNzktYmI3NGQxNDViNTcwIiwidCI6IjNlMWMxODA4LTZlNzItNDY2Yi1iZDU0LTU0ZWUwYWVkNjYyMSJ9" frameborder="0" allowFullScreen="true"></iframe>
+
+
+XHospital: Insights and Indicators – Murilo Farias
+
+This project was developed for the Xperiun Challenge (Leonardo Karpinski – Learn Power BI), showcasing a commitment to transforming data into actionable insights.
+
+Data Source: Data World
+Project Workflow:
+SQL Analysis: Conducted a detailed SQL analysis to ensure data integrity and accuracy.
+Power Query Data Preparation: Cleaned and transformed the data for advanced analysis.
+Data Modeling: Created and optimized relationships between tables for a solid analytical foundation.
+Interactive Dashboards: Developed essential measures and intuitive visuals to highlight insights clearly and effectively.
+Key Outcome:
+The dashboard supports daily hospital management and helps identify improvement opportunities through a user-friendly interface designed for efficient decision-making.
+
+Tools Used:
+
+SQL: For data integrity checks and initial analysis.
+Power BI (Power Query): For data cleaning, transformation, modeling, and visualization.
+Execution Time: 20 hours

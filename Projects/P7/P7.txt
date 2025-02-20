@@ -1,0 +1,39 @@
+<iframe title="Dashboard_GDSUN" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiOWIwYTg1ZmUtMzlmZi00NmQ2LWJkMGMtNDg5YWU2ODU0OTY4IiwidCI6IjNlMWMxODA4LTZlNzItNDY2Yi1iZDU0LTU0ZWUwYWVkNjYyMSJ9" frameborder="0" allowFullScreen="true"></iframe>
+
+
+Power BI Dashboard Overview – UFV (Usinas Fotovoltaicas)
+This Power BI dashboard provides a comprehensive analysis of solar power plants (UFVs) across different regions of Brazil, highlighting their distribution, capacity, and regional contributions.
+
+📊 Key Metrics:
+Total Number of Solar Plants: 54
+Total Installed Capacity: 173,657 kWp
+🗺️ Geographical Distribution:
+The map displays the locations of solar plants by region, color-coded as:
+🟣 Centro-Oeste
+🧡 Nordeste
+🔵 Norte
+🟡 Sudeste
+🔵 Sul
+📈 Installed Capacity by Region:
+The Treemap on the bottom right shows the contribution of each region:
+
+Sudeste: 104.15 thousand kWp (largest contributor)
+Sul: 30.33 thousand kWp
+Nordeste: 27.63 thousand kWp
+Centro-Oeste: 6.2 thousand kWp
+Norte: 5.3 thousand kWp
+📊 Top States by Number of Plants (Bar Chart):
+SP (São Paulo): 17 plants
+MG (Minas Gerais): 12 plants
+RS (Rio Grande do Sul): 9 plants
+📃 Detailed Plant List (Table):
+The table lists the solar plants in São Paulo (SP), highlighting their installed capacities (in kWp). Examples include:
+
+Barretos (Colombia): 6,560.96 kWp
+Cachoeira Paulista: 1,311.96 kWp
+Estância (Fernandópolis): 5,524.20 kWp
+💡 Insights:
+The Southeast (Sudeste) region leads both in the number of plants and total capacity.
+São Paulo (SP) is the most significant contributor within the Southeast.
+The South (Sul) and Northeast (Nordeste) also have notable contributions.
+This dashboard is a clear, data-driven tool for analyzing the distribution and performance of solar energy production across Brazil. 🚀☀️📊

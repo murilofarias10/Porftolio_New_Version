@@ -1,0 +1,21 @@
+<iframe title="Project" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZmNmOTBmNTgtMGE5ZS00NWQ0LTk2OGMtODM2MDI5NjBjNTA3IiwidCI6IjNlMWMxODA4LTZlNzItNDY2Yi1iZDU0LTU0ZWUwYWVkNjYyMSJ9" frameborder="0" allowFullScreen="true"></iframe>
+
+Power BI Bootcamp Final Project – "NEWSPAPER" by Murilo Farias
+
+This project was created as the final assignment for the Power BI Bootcamp, which was conducted entirely in English from April to June.
+
+Acknowledgments:
+Special thanks to Nikola Ilic for the opportunity to participate.
+Gratitude to Augustin Dokoza Bukvic for all the classes and guidance throughout the bootcamp.
+Project Overview:
+Project Name: NEWSPAPER
+Tool Used: Power BI
+Focus: Creating interactive and insightful dashboards using Power BI, applying all the concepts learned during the bootcamp.
+Outcome: Improved data visualization skills and enhanced English proficiency.
+Database Management System (DBMS):
+For this project, I used a Relational Database Management System (RDBMS) to store and query the dataset before importing it into Power BI. SQL queries were applied to clean, join, and aggregate the data, ensuring it was well-structured and ready for visualization.
+
+Tools Used:
+SGBD (RDBMS): For data storage, querying, and preprocessing (SQL)
+Power BI: For data modeling and interactive visualizations
+You can explore the full project via the link below:

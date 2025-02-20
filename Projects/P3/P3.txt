@@ -1,0 +1,17 @@
+https://github.com/murilofarias10/Python/blob/main/AI/API_Serper.py
+
+Serper API Integration with Python
+
+This project demonstrates how to interact with the Serper API to retrieve structured JSON responses using Python. The API allows up to 2,500 free queries, making it a great option for testing without initial costs.
+
+API Features:
+
+Structured JSON responses for easy data handling
+Free tier with 2,500 queries
+A user-friendly dashboard to track queries
+A playground for testing code
+Support for multiple programming languages (Python, JavaScript, C, etc.)
+Python Libraries Used:
+
+requests – for handling API calls
+json – for processing structured API responses

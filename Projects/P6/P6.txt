@@ -1,0 +1,21 @@
+<iframe title="Relatorio_Geral_Kubik" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiN2UwMDk5NzQtN2ZmYi00MjVmLWFmYWEtNzFlN2U0ZWZhZDkyIiwidCI6IjNlMWMxODA4LTZlNzItNDY2Yi1iZDU0LTU0ZWUwYWVkNjYyMSJ9" frameborder="0" allowFullScreen="true"></iframe>
+
+
+Kubik Engineering General Report – Power BI Dashboard by Murilo Farias
+
+This project presents a comprehensive Power BI dashboard created for Kubik Engenharia, designed to provide key insights and support decision-making processes.
+
+Project Overview:
+Client: Kubik Engenharia
+Tool Used: Power BI
+Objective: To offer an interactive and detailed view of company operations through insightful visualizations and essential KPIs.
+Workflow and Development Process:
+Data Connection (SharePoint): Integrated the dataset directly from SharePoint for real-time access.
+Data Transformation (Power Query): Cleaned and prepared the data for analysis.
+Data Modeling: Established relationships between tables for efficient data visualization.
+Dashboard Development: Created interactive visuals, including performance indicators and trends.
+Data Source and Connection:
+SharePoint: Used as the primary data source to connect and import data into Power BI, ensuring seamless updates and collaboration.
+Tools Used:
+SharePoint: For data storage and direct integration with Power BI
+Power BI (Power Query): For data transformation and visualization
