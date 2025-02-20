@@ -83,55 +83,87 @@ const projects = [
         pdf: ""
     },
     {
-        title: "SQL Optimization Project",
-        description: "This project, submitted to DIO, analyzes two years of sales data for Company X using Python.<br>" +
-            "It provides insights through various charts, including pie, bar, line, box plot, and histogram.<br>" +
-            "Key findings include the <strong>top-selling product</strong>, annual and monthly profits, best-selling brands,<br>" +
-            "and shipping time statistics. The full code and dataset are available on GitHub:<br>" +
-            "<a href='https://github.com/murilofarias10/R_SQL_OUTROS/blob/main/AnaliseExploratoriaPython/AnaliseExploratoriaDIO.ipynb' target='_blank'>GitHub Repo</a><br><br>" +
-            "Libraries used:<br>" +
-            "- pandas – for data manipulation and analysis<br>" +
-            "- numpy – for numerical operations<br>" +
-            "- matplotlib – for static, animated, and interactive visualizations<br>" +
-            "- seaborn – for statistical data visualization<br>" +
-            "- plotly (optional) – for interactive visualizations<br>" +
-            "- scipy – for statistical analysis (e.g., detecting outliers)",
+        title: "Power BI Bootcamp Final Project – \"NEWSPAPER\" by Murilo Farias",
+        description: "This project was created as the final assignment for the Power BI Bootcamp, which was conducted entirely in English from April to June.<br><br>" +
+            "Acknowledgments:<br>" +
+            "- Special thanks to Nikola Ilic for the opportunity to participate.<br>" +
+            "- Gratitude to Augustin Dokoza Bukvic for all the classes and guidance throughout the bootcamp.<br><br>" +
+            "Project Overview:<br>" +
+            "- Project Name: NEWSPAPER<br>" +
+            "- Tool Used: Power BI<br>" +
+            "- Focus: Creating interactive and insightful dashboards using Power BI, applying all the concepts learned during the bootcamp.<br>" +
+            "- Outcome: Improved data visualization skills and enhanced English proficiency.<br><br>" +
+            "Database Management System (DBMS):<br>" +
+            "For this project, I used a Relational Database Management System (RDBMS) to store and query the dataset before importing it into Power BI.<br>" +
+            "SQL queries were applied to clean, join, and aggregate the data, ensuring it was well-structured and ready for visualization.<br><br>" +
+            "Tools Used:<br>" +
+            "- SGBD (RDBMS): For data storage, querying, and preprocessing (SQL)<br>" +
+            "- Power BI: For data modeling and interactive visualizations<br><br>" +
+            "The interactive dashboard can be viewed below:<br><br>" +
+            "<iframe title='Project' width='600' height='373.5' src='https://app.powerbi.com/view?r=eyJrIjoiZmNmOTBmNTgtMGE5ZS00NWQ0LTk2OGMtODM2MDI5NjBjNTA3IiwidCI6IjNlMWMxODA4LTZlNzItNDY2Yi1iZDU0LTU0ZWUwYWVkNjYyMSJ9' frameborder='0' allowFullScreen='true'></iframe>",
         image: "/Projects/P5/P5.jpg",
-        iframe: "https://app.powerbi.com/view?r=eyJrIjoiZmNmOTBmNTgtMGE5ZS00NWQ0LTk2OGMtODM2MDI5NjBjNTA3IiwidCI6IjNlMWMxODA4LTZlNzItNDY2Yi1iZDU0LTU0ZWUwYWVkNjYyMSJ9",
+        iframe: "",
         pdf: ""
     },
     {
-        title: "Python Automation Project",
-        description: "This project, submitted to DIO, analyzes two years of sales data for Company X using Python.<br>" +
-            "It provides insights through various charts, including pie, bar, line, box plot, and histogram.<br>" +
-            "Key findings include the <strong>top-selling product</strong>, annual and monthly profits, best-selling brands,<br>" +
-            "and shipping time statistics. The full code and dataset are available on GitHub:<br>" +
-            "<a href='https://github.com/murilofarias10/R_SQL_OUTROS/blob/main/AnaliseExploratoriaPython/AnaliseExploratoriaDIO.ipynb' target='_blank'>GitHub Repo</a><br><br>" +
-            "Libraries used:<br>" +
-            "- pandas – for data manipulation and analysis<br>" +
-            "- numpy – for numerical operations<br>" +
-            "- matplotlib – for static, animated, and interactive visualizations<br>" +
-            "- seaborn – for statistical data visualization<br>" +
-            "- plotly (optional) – for interactive visualizations<br>" +
-            "- scipy – for statistical analysis (e.g., detecting outliers)",
+        title: "Kubik Engineering General Report – Power BI Dashboard by Murilo Farias",
+        description: "This project presents a comprehensive Power BI dashboard created for Kubik Engenharia, designed to provide key insights and support decision-making processes.<br><br>" +
+            "Project Overview:<br>" +
+            "- Client: Kubik Engenharia<br>" +
+            "- Tool Used: Power BI<br>" +
+            "- Objective: To offer an interactive and detailed view of company operations through insightful visualizations and essential KPIs.<br><br>" +
+            "Workflow and Development Process:<br>" +
+            "- Data Connection (SharePoint): Integrated the dataset directly from SharePoint for real-time access.<br>" +
+            "- Data Transformation (Power Query): Cleaned and prepared the data for analysis.<br>" +
+            "- Data Modeling: Established relationships between tables for efficient data visualization.<br>" +
+            "- Dashboard Development: Created interactive visuals, including performance indicators and trends.<br><br>" +
+            "Data Source and Connection:<br>" +
+            "- SharePoint: Used as the primary data source to connect and import data into Power BI, ensuring seamless updates and collaboration.<br><br>" +
+            "Tools Used:<br>" +
+            "- SharePoint: For data storage and direct integration with Power BI<br>" +
+            "- Power BI (Power Query): For data transformation and visualization<br><br>" +
+            "The interactive dashboard can be viewed below:<br><br>" +
+            "<iframe title='Relatorio_Geral_Kubik' width='600' height='373.5' src='https://app.powerbi.com/view?r=eyJrIjoiN2UwMDk5NzQtN2ZmYi00MjVmLWFmYWEtNzFlN2U0ZWZhZDkyIiwidCI6IjNlMWMxODA4LTZlNzItNDY2Yi1iZDU0LTU0ZWUwYWVkNjYyMSJ9' frameborder='0' allowFullScreen='true'></iframe>",
         image: "/Projects/P6/P6.jpg",
         iframe: "",
         pdf: ""
     },
     {
-        title: "Data Visualization with Power BI",
-        description: "This project, submitted to DIO, analyzes two years of sales data for Company X using Python.<br>" +
-            "It provides insights through various charts, including pie, bar, line, box plot, and histogram.<br>" +
-            "Key findings include the <strong>top-selling product</strong>, annual and monthly profits, best-selling brands,<br>" +
-            "and shipping time statistics. The full code and dataset are available on GitHub:<br>" +
-            "<a href='https://github.com/murilofarias10/R_SQL_OUTROS/blob/main/AnaliseExploratoriaPython/AnaliseExploratoriaDIO.ipynb' target='_blank'>GitHub Repo</a><br><br>" +
-            "Libraries used:<br>" +
-            "- pandas – for data manipulation and analysis<br>" +
-            "- numpy – for numerical operations<br>" +
-            "- matplotlib – for static, animated, and interactive visualizations<br>" +
-            "- seaborn – for statistical data visualization<br>" +
-            "- plotly (optional) – for interactive visualizations<br>" +
-            "- scipy – for statistical analysis (e.g., detecting outliers)",
+        title: "Power BI Dashboard Overview – UFV (Usinas Fotovoltaicas)",
+        description: "This Power BI dashboard provides a comprehensive analysis of solar power plants (UFVs) across different regions of Brazil, highlighting their distribution, capacity, and regional contributions.<br><br>" +
+            "📊 Key Metrics:<br>" +
+            "- Total Number of Solar Plants: 54<br>" +
+            "- Total Installed Capacity: 173,657 kWp<br><br>" +
+            "🗺️ Geographical Distribution:<br>" +
+            "The map displays the locations of solar plants by region, color-coded as:<br>" +
+            "🟣 Centro-Oeste<br>" +
+            "🧡 Nordeste<br>" +
+            "🔵 Norte<br>" +
+            "🟡 Sudeste<br>" +
+            "🔵 Sul<br><br>" +
+            "📈 Installed Capacity by Region:<br>" +
+            "The Treemap on the bottom right shows the contribution of each region:<br><br>" +
+            "- Sudeste: 104.15 thousand kWp (largest contributor)<br>" +
+            "- Sul: 30.33 thousand kWp<br>" +
+            "- Nordeste: 27.63 thousand kWp<br>" +
+            "- Centro-Oeste: 6.2 thousand kWp<br>" +
+            "- Norte: 5.3 thousand kWp<br><br>" +
+            "📊 Top States by Number of Plants (Bar Chart):<br>" +
+            "- SP (São Paulo): 17 plants<br>" +
+            "- MG (Minas Gerais): 12 plants<br>" +
+            "- RS (Rio Grande do Sul): 9 plants<br><br>" +
+            "📃 Detailed Plant List (Table):<br>" +
+            "The table lists the solar plants in São Paulo (SP), highlighting their installed capacities (in kWp). Examples include:<br><br>" +
+            "- Barretos (Colombia): 6,560.96 kWp<br>" +
+            "- Cachoeira Paulista: 1,311.96 kWp<br>" +
+            "- Estância (Fernandópolis): 5,524.20 kWp<br><br>" +
+            "💡 Insights:<br>" +
+            "- The Southeast (Sudeste) region leads both in the number of plants and total capacity.<br>" +
+            "- São Paulo (SP) is the most significant contributor within the Southeast.<br>" +
+            "- The South (Sul) and Northeast (Nordeste) also have notable contributions.<br><br>" +
+            "This dashboard is a clear, data-driven tool for analyzing the distribution and performance of solar energy production across Brazil. 🚀☀️📊<br><br>" +
+            "The interactive dashboard can be viewed below:<br><br>" +
+            "<iframe title='Dashboard_GDSUN' width='600' height='373.5' src='https://app.powerbi.com/view?r=eyJrIjoiOWIwYTg1ZmUtMzlmZi00NmQ2LWJkMGMtNDg5YWU2ODU0OTY4IiwidCI6IjNlMWMxODA4LTZlNzItNDY2Yi1iZDU0LTU0ZWUwYWVkNjYyMSJ9' frameborder='0' allowFullScreen='true'></iframe>",
         image: "/Projects/P7/P7.jpg",
         iframe: "",
         pdf: ""
