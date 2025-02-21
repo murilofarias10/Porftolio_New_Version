@@ -1,4 +1,3 @@
-let currentProject = 1;
 
 const projects = [
     {
@@ -18,7 +17,6 @@ const projects = [
         image: "/Projects/P1/FP1.jpg",
         iframe: "",
         pdf: "/Projects/P1/Results1.pdf"
-        
     },
     {
         title: "STONE Data Challenge 2022",
@@ -223,55 +221,68 @@ const projects = [
     }
 ];
 
+let currentProject = 1;
+const totalProjects = projects.length; // Dynamically get the total
+
 function showProject(index) {
+    if (index < 1) index = 1;
+    if (index > totalProjects) index = totalProjects;
+
     currentProject = index;
 
-    // Esconde todos os cards de projeto
     const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach(card => card.style.display = 'none');
 
-    // Mostra o card de projeto correto
     const projectCard = document.getElementById(`project-card-${index}`);
-    projectCard.style.display = 'block';
+    if (projectCard) {
+        projectCard.style.display = 'block';
+    }
 
     const iframe = projectCard.querySelector('iframe');
     const projectTitle = projectCard.querySelector('h3');
     const projectDescription = projectCard.querySelector('p');
-    const projectImage = projectCard.querySelector('img');
     const viewDetailsBtn = projectCard.querySelector('.view-details-btn');
 
-    iframe.style.display = 'none';
+    if (iframe) { // Check if iframe exists before manipulating it
+        iframe.style.display = 'none'; // Hide initially
+    }
 
     const project = projects[index - 1];
 
-    projectTitle.textContent = project.title;
-    projectDescription.innerHTML = project.description;
-    projectImage.src = project.image;
+    if (project) { // Check if project data exists
+        projectTitle.textContent = project.title;
+        projectDescription.innerHTML = project.description;
 
-
-    viewDetailsBtn.onclick = () => {
-        if (project.iframe) {
-            if (iframe.style.display === 'block') {
-                iframe.style.display = 'none';
+        viewDetailsBtn.onclick = () => {
+            if (project.iframe) {
+                if (iframe) { // Check if iframe exists
+                    iframe.style.display = iframe.style.display === 'block' ? 'none' : 'block';
+                    iframe.src = project.iframe;
+                }
+            } else if (project.pdf) {
+                if (iframe) { // Check if iframe exists
+                    iframe.style.display = iframe.style.display === 'block' ? 'none' : 'block';
+                    iframe.src = project.pdf;
+                }
             } else {
-                iframe.style.display = 'block';
-                iframe.src = project.iframe;
+                alert("Details for this project are not available yet.");
             }
-        } else if (project.pdf) {
-            if (iframe.style.display === 'block') {
-                iframe.style.display = 'none';
-            } else {
-                iframe.style.display = 'block';
-                iframe.src = project.pdf;
-            }
-        } else {
-            alert("Details for this project are not available yet.");
-        }
-    };
+        };
+    }
 
+    updateActiveButton();
+}
+
+
+function updateActiveButton() {
     const buttons = document.querySelectorAll('.project-menu .btn');
-    buttons.forEach(btn => btn.classList.remove('active'));
-    buttons[index - 1].classList.add('active');
+    buttons.forEach((btn, idx) => {
+        if (idx === currentProject - 1) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
 }
 
 function previousProject() {
@@ -281,11 +292,24 @@ function previousProject() {
 }
 
 function nextProject() {
-    if (currentProject < projects.length) {
+    if (currentProject < totalProjects) {
         showProject(currentProject + 1);
     }
 }
 
+function initializeProjectImages() {
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach((card, index) => {
+        const projectImage = card.querySelector('img');
+        const project = projects[index];
+        if (project && project.image) {
+            projectImage.src = project.image;
+        }
+    });
+}
+
 window.onload = function () {
+    initializeProjectImages();
     showProject(currentProject);
+    updateActiveButton(); // Call updateActiveButton after showProject
 };

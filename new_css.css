@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-/* Estilos para a seção "Sobre Mim" */
+/* Seção Sobre Mim */
 .about-section {
     display: flex;
     flex-direction: column;
@@ -16,16 +16,13 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilos para o conteúdo principal da seção "Sobre Mim" (imagem e texto) */
 .about-content {
     display: flex;
     max-width: 960px;
     width: 100%;
-    gap: 40px; /* Espaçamento entre a imagem e o texto */
+    gap: 40px;
 }
 
-/* Estilos para a imagem de perfil */
-/* Estilos para a imagem de perfil */
 .about-image {
     display: flex;
     flex-direction: column;
@@ -38,19 +35,17 @@ body {
     height: 250px;
     border-radius: 50%;
     border: 3px solid #61afef;
-    max-width: 100%; /* Garante responsividade da imagem */
+    max-width: 100%;
 }
 
-/* Estilos para os botões de contato (LinkedIn, GitHub, Resume) */
 .about-buttons {
     display: flex;
     gap: 20px;
-    justify-content: center; /* Centraliza os botões horizontalmente */
+    justify-content: center;
 }
 
-/* Estilos para as informações de texto sobre o usuário */
 .about-info {
-    flex: 1; /* Ocupa o espaço restante */
+    flex: 1;
 }
 
 .about-info h2 {
@@ -58,7 +53,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilos para os detalhes de contato */
 .contact-details {
     margin-bottom: 20px;
 }
@@ -75,6 +69,7 @@ body {
     margin-right: 50px;
 }
 
+/* Botões */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -82,22 +77,24 @@ body {
     color: #282c34;
     text-decoration: none;
     border-radius: 8px;
-    margin-right: 15px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin: 5px;
 }
 
+/* Estilo do botão ativo (projeto selecionado) */
+.btn.active {
+    background-color: #b1f32d; /* Cor amarela para o botão ativo */
+    color: #282c34; /* Mantém o contraste do texto */
+}
+
+/* Efeito de hover */
 .btn:hover {
     background-color: #b1f32d;
 }
 
-/* Estilos para o menu de projetos */
-.project-menu .btn.active {
-    background-color: #b1f32d;
-}
-
-/* Estilos para a seção de projetos */
+/* Seção de Projetos */
 .projects {
     padding: 40px;
     background-color: #353941;
@@ -116,13 +113,14 @@ body {
     justify-content: center;
 }
 
-/* Estilos para os detalhes dos projetos (cards) */
+/* Detalhes dos Projetos (Cards) */
 .project-details {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsivo com grid */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 30px;
 }
 
+/* Estilos do Card de Projetos */
 .project-card {
     border: 1px solid #4b4f56;
     padding: 30px;
@@ -132,69 +130,92 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
-/* FOTOS PROJETOS INICIO */
+/* Container da Imagem */
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Define o tamanho fixo da largura */
+    height: 700px; /* Define a altura fixa */
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #353941; /* Cor de fundo para áreas vazias */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
 
+/* Estilos da Imagem */
 .project-img {
-    max-width: 100%; /* Garante responsividade da imagem */
-    height: auto; /* Ajusta a altura proporcionalmente */
-    object-fit: cover;
-    transition: filter 0.3s ease; /* Transição suave para o filtro */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ajusta a imagem dentro do container sem cortes */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 8px;
+    background-color: #353941; /* Mesma cor do container para uniformidade */
 }
 
+
+/* Efeito de Hover apenas sobre a imagem */
 .project-img:hover {
-    filter: brightness(0.7); /* Escurece a imagem no hover */
+    filter: brightness(0.7); /* Escurece levemente no hover */
     cursor: pointer;
 }
 
-.project-img[title] {
-    position: relative;
-}
-
-.project-img[title]::before {
-    content: attr(title);
+/* Overlay para aparecer apenas sobre a imagem */
+.overlay {
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto mais opaco */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 8px 15px; /* Aumenta o padding para melhor legibilidade */
-    border-radius: 8px; /* Arredonda mais as bordas */
-    font-size: 16px; /* Aumenta a fonte para melhor nitidez */
-    font-weight: bold; /* Texto em negrito para destacar */
-    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Sombra no texto para realçar */
+    border-radius: 8px;
 }
 
-.project-img:hover[title]::before {
+/* Exibe o Overlay apenas sobre a imagem */
+.image-container:hover .overlay {
     opacity: 1;
 }
 
-/* FOTOS PROJETOS FIM */
-.project-card h3 {
-    color: #61afef;
+/* Conteúdo do Overlay */
+.overlay-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay h3 {
     margin-bottom: 10px;
+    color: #61afef;
 }
 
-.project-card p {
-    line-height: 1.6;
+.overlay p {
+    font-size: 14px;
 }
 
+/* Botões de controle de projetos */
 .project-controls {
     margin-top: 30px;
     display: flex;
     justify-content: center;
 }
 
-/* Estilos para o iframe de exibição do projeto */
+/* Iframe */
 .iframe-container {
-    border: solid; /* Keep the style */
-    border-color: transparent; /* Make the border transparent */
+    border: solid;
+    border-color: transparent;
     width: 100%;
     height: 600px;
     margin-top: 20px;
@@ -208,15 +229,11 @@ body {
     border: none;
 }
 
-/* Media queries para responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
         align-items: center;
-    }
-
-    .about-image {
-        margin-bottom: 20px;
     }
 
     .project-menu {
@@ -224,7 +241,7 @@ body {
     }
 
     .project-details {
-        grid-template-columns: 1fr; /* Cards em uma coluna em telas menores */
+        grid-template-columns: 1fr;
     }
 
     .iframe-container {
@@ -233,6 +250,15 @@ body {
 
     .project-card {
         padding: 30px;
-        width: 100%; /* Garante que o card ocupe toda a largura */
+        width: 100%;
+    }
+
+    /* Imagem responsiva em dispositivos menores */
+    .image-container {
+        max-width: 100%;
+    }
+
+    .project-img {
+        max-height: 200px;
     }
 }

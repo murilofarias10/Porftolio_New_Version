@@ -47,7 +47,7 @@
         <h2>Projects</h2>
         <div class="project-menu">
             
-            <button class="btn active" onclick="showProject(1)">Exploratory Data Analysist</button>
+            <button class="btn" onclick="showProject(1)">Exploratory Data Analysist</button>
             <button class="btn" onclick="showProject(2)">Machine Learning Project</button>
             <button class="btn" onclick="showProject(3)">Data Warehouse Design</button>
             <button class="btn" onclick="showProject(4)">ETL Process Automation</button>
@@ -60,153 +60,197 @@
         </div>
 
 
+        <!-- Card do Projeto 1 -->
         <div class="project-details">
+            <!-- Card do Projeto -->
             <div id="project-card-1" class="project-card">
-                <h3></h3>
-                <p></p>
-                <img src="" alt="Project Image" class="project-img" title="Texto que aparece no hover">
-                <p></p>
-                <div class="project-controls">
-                    <button class="btn" onclick="previousProject()">Previous</button>
-                    <button class="btn" onclick="nextProject()">Next</button>
-                </div>
-                <p></p>
-                <button class="btn view-details-btn">View Details</button>
-                <div class="iframe-container">
-                    <iframe src="" style="display:none;" width="800" height="600"></iframe>
+                <div class="image-container">
 
+                    <img src="imagem_projeto1.jpg" alt="Project Image 1" class="project-img" title="Project 1 Description">
+
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Project Title 1</h3>
+                            <p>A brief description of project 1.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id="project-card-2" class="project-card" style="display: none;">
-                <h3></h3>
-                <p></p>
-                <img src="" alt="Project Image" class="project-img">
-                <p></p>
                 <div class="project-controls">
                     <button class="btn" onclick="previousProject()">Previous</button>
                     <button class="btn" onclick="nextProject()">Next</button>
                 </div>
-                <p></p>
+                <button class="btn view-details-btn">View Details</button>
+            </div>
+        </div>
+
+
+            <div id="project-card-2" class="project-card" style="display: none;">
+                <div class="image-container">
+                    <img src="" alt="Project Image 2" class="project-img">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Project Title 2</h3>
+                            <p>A brief description of project 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-controls">
+                    <button class="btn" onclick="previousProject()">Previous</button>
+                    <button class="btn" onclick="nextProject()">Next</button>
+                </div>
                 <button class="btn view-details-btn">View Details</button>
                 <div class="iframe-container">
                     <iframe src="" style="display:none;" width="800" height="600"></iframe>
                 </div>
             </div>
             <div id="project-card-3" class="project-card" style="display: none;">
-                <h3></h3>
-                <p></p>
-                <img src="" alt="Project Image" class="project-img">
-                <p></p>
+                <div class="image-container">
+                    <img src="" alt="Project Image 3" class="project-img">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Project Title 3</h3>
+                            <p>A brief description of project 3.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-controls">
                     <button class="btn" onclick="previousProject()">Previous</button>
                     <button class="btn" onclick="nextProject()">Next</button>
                 </div>
-                <p></p>
                 <button class="btn view-details-btn">View Details</button>
                 <div class="iframe-container">
                     <iframe src="" style="display:none;" width="800" height="600"></iframe>
                 </div>
             </div>
             <div id="project-card-4" class="project-card" style="display: none;">
-                <h3></h3>
-                <p></p>
-                <img src="" alt="Project Image" class="project-img">
-                <p></p>
+                <div class="image-container">
+                    <img src="" alt="Project Image 4" class="project-img">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Project Title 4</h3>
+                            <p>A brief description of project 4.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-controls">
                     <button class="btn" onclick="previousProject()">Previous</button>
                     <button class="btn" onclick="nextProject()">Next</button>
                 </div>
-                <p></p>
                 <button class="btn view-details-btn">View Details</button>
                 <div class="iframe-container">
                     <iframe src="" style="display:none;" width="800" height="600"></iframe>
                 </div>
             </div>
             <div id="project-card-5" class="project-card" style="display: none;">
-                <h3></h3>
-                <p></p>
-                <img src="" alt="Project Image" class="project-img">
-                <p></p>
+                <div class="image-container">
+                    <img src="" alt="Project Image 5" class="project-img">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Project Title 5</h3>
+                            <p>A brief description of project 5.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-controls">
                     <button class="btn" onclick="previousProject()">Previous</button>
                     <button class="btn" onclick="nextProject()">Next</button>
                 </div>
-                <p></p>
                 <button class="btn view-details-btn">View Details</button>
                 <div class="iframe-container">
                     <iframe src="" style="display:none;" width="800" height="600"></iframe>
                 </div>
             </div>
+
             <div id="project-card-6" class="project-card" style="display: none;">
-                <h3></h3>
-                <p></p>
-                <img src="" alt="Project Image" class="project-img">
-                <p></p>
+                <div class="image-container">
+                    <img src="" alt="Project Image 6" class="project-img">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Project Title 6</h3>
+                            <p>A brief description of project 6.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-controls">
                     <button class="btn" onclick="previousProject()">Previous</button>
                     <button class="btn" onclick="nextProject()">Next</button>
                 </div>
-                <p></p>
                 <button class="btn view-details-btn">View Details</button>
                 <div class="iframe-container">
                     <iframe src="" style="display:none;" width="800" height="600"></iframe>
                 </div>
             </div>
             <div id="project-card-7" class="project-card" style="display: none;">
-                <h3></h3>
-                <p></p>
-                <img src="" alt="Project Image" class="project-img">
-                <p></p>
+                <div class="image-container">
+                    <img src="" alt="Project Image 7" class="project-img">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Project Title 7</h3>
+                            <p>A brief description of project 7.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-controls">
                     <button class="btn" onclick="previousProject()">Previous</button>
                     <button class="btn" onclick="nextProject()">Next</button>
                 </div>
-                <p></p>
                 <button class="btn view-details-btn">View Details</button>
                 <div class="iframe-container">
                     <iframe src="" style="display:none;" width="800" height="600"></iframe>
                 </div>
             </div>
             <div id="project-card-8" class="project-card" style="display: none;">
-                <h3></h3>
-                <p></p>
-                <img src="" alt="Project Image" class="project-img">
-                <p></p>
+                <div class="image-container">
+                    <img src="" alt="Project Image 8" class="project-img">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Project Title 8</h3>
+                            <p>A brief description of project 8.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-controls">
                     <button class="btn" onclick="previousProject()">Previous</button>
                     <button class="btn" onclick="nextProject()">Next</button>
                 </div>
-                <p></p>
                 <button class="btn view-details-btn">View Details</button>
                 <div class="iframe-container">
                     <iframe src="" style="display:none;" width="800" height="600"></iframe>
                 </div>
             </div>
             <div id="project-card-9" class="project-card" style="display: none;">
-                <h3></h3>
-                <p></p>
-                <img src="" alt="Project Image" class="project-img">
-                <p></p>
+                <div class="image-container">
+                    <img src="" alt="Project Image 9" class="project-img">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Project Title 9</h3>
+                            <p>A brief description of project 9.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-controls">
                     <button class="btn" onclick="previousProject()">Previous</button>
                     <button class="btn" onclick="nextProject()">Next</button>
                 </div>
-                <p></p>
                 <button class="btn view-details-btn">View Details</button>
                 <div class="iframe-container">
                     <iframe src="" style="display:none;" width="800" height="600"></iframe>
                 </div>
             </div>
             <div id="project-card-10" class="project-card" style="display: none;">
-                <h3></h3>
-                <p></p>
-                <img src="" alt="Project Image" class="project-img">
-                <p></p>
+                <div class="image-container">
+                    <img src="" alt="Project Image 10" class="project-img">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Project Title 10</h3>
+                            <p>A brief description of project 10.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-controls">
                     <button class="btn" onclick="previousProject()">Previous</button>
                     <button class="btn" onclick="nextProject()">Next</button>
                 </div>
-                <p></p>
                 <button class="btn view-details-btn">View Details</button>
                 <div class="iframe-container">
                     <iframe src="" style="display:none;" width="800" height="600"></iframe>
