@@ -1,7 +1,7 @@
 <iframe title="Dashboard_GDSUN" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiOWIwYTg1ZmUtMzlmZi00NmQ2LWJkMGMtNDg5YWU2ODU0OTY4IiwidCI6IjNlMWMxODA4LTZlNzItNDY2Yi1iZDU0LTU0ZWUwYWVkNjYyMSJ9" frameborder="0" allowFullScreen="true"></iframe>
 
 
-Power BI Dashboard Overview – UFV (Usinas Fotovoltaicas)
+Dashboard Overview – UFV (Usinas Fotovoltaicas)
 This Power BI dashboard provides a comprehensive analysis of solar power plants (UFVs) across different regions of Brazil, highlighting their distribution, capacity, and regional contributions.
 
 📊 Key Metrics:
